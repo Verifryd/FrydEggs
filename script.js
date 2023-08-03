@@ -78,6 +78,39 @@ if (dpteButton && dpteVideo) {
     });
 }
 
+// When the video ends, enable the "Next Egg" button and set a flag in localStorage
+video.addEventListener('ended', function() {
+    document.getElementById('nextButton').disabled = false;
+    localStorage.setItem('kringleProductViewed', 'true'); // Use a different key for each product
+});
+
+// When the video ends, enable the "Next Egg" button and set a flag in localStorage
+video.addEventListener('ended', function() {
+    document.getElementById('nextButton').disabled = false;
+    localStorage.setItem('DPtEProductViewed', 'true'); // Use a different key for each product
+});
+
+window.onload = function() {
+    // If the 'kringleProductViewed' flag is not set in localStorage, disable the link
+    if (!localStorage.getItem('kringleProductViewed')) {
+        document.getElementById('kringleLink').onclick = function(event) {
+            event.preventDefault();
+        }
+    }
+    // Repeat for each product...
+};
+
+window.onload = function() {
+    // If the 'DPtEProductViewed' flag is not set in localStorage, disable the link
+    if (!localStorage.getItem('DPtEProductViewed')) {
+        document.getElementById('DPtELink').onclick = function(event) {
+            event.preventDefault();
+        }
+    }
+    // Repeat for each product...
+};
+
+
 window.onload = function() {
     // your code here
 };

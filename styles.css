@@ -113,5 +113,10 @@ body.index {
     height: auto;
 }
 
+button:disabled {
+    background-color: #cccccc; /* grey background */
+    color: #888888; /* darker grey text */
+}
+
 
 

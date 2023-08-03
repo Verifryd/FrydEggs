@@ -108,4 +108,10 @@ body.index {
   }
 }
 
+#productVideo, #kringleproductVideo, #dpteproductVideo {
+    width: 400px;
+    height: auto;
+}
+
+
 

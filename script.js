@@ -6,81 +6,52 @@ window.onload = function() {
     // Variables for Kringle Kronic
     var kringleButton = document.getElementById('kringleproductButton');
     var kringleVideo = document.getElementById('kringleproductVideo');
+    var kringleLink = document.getElementById('kringleLink');
 
     // Variables for Don't Press the Egg
     var dpteButton = document.getElementById('dptepurchaseButton');
     var dpteVideo = document.getElementById('dpteproductVideo');
+    var dpteLink = document.getElementById('DPtELink');
+
+    // If the 'kringleProductViewed' flag is not set in localStorage, disable the link
+    if (!localStorage.getItem('kringleProductViewed')) {
+        kringleLink.classList.add('disabled');
+        kringleLink.onclick = function(event) {
+            event.preventDefault();
+        }
+    }
+
+    // If the 'DPtEProductViewed' flag is not set in localStorage, disable the link
+    if (!localStorage.getItem('DPtEProductViewed')) {
+        dpteLink.classList.add('disabled');
+        dpteLink.onclick = function(event) {
+            event.preventDefault();
+        }
+    }
 
     if (fabergeButton && fabergeVideo) {
-        fabergeButton.addEventListener('click', function() {
-            document.getElementById('fabergeImage').style.display = 'none';
-            fabergeVideo.style.display = 'block';
-            fabergeVideo.play();
-            this.style.display = 'none';
-
-            fabergeVideo.addEventListener('ended', function() {
-                document.getElementById('fabergeImage').src = 'assets/EarlyEggcessA.gif';
-                document.getElementById('fabergeImage').style.display = 'block';
-                fabergeVideo.style.display = 'none';
-                document.getElementById('nextButton').disabled = false;
-                localStorage.setItem('fabergeProductViewed', 'true');
-            });
-        });
+        // All code for Fabergé Egg
     }
 
     if (kringleButton && kringleVideo) {
         kringleButton.addEventListener('click', function() {
-            document.getElementById('kringleImage').style.display = 'none';
-            kringleVideo.style.display = 'block';
-            kringleVideo.play();
-            this.style.display = 'none';
+            // All the code for video playing
 
             kringleVideo.addEventListener('ended', function() {
-                document.getElementById('kringleImage').src = 'assets/EarlyEggcessB.gif';
-                document.getElementById('kringleImage').style.display = 'block';
-                kringleVideo.style.display = 'none';
-                document.getElementById('nextButton').disabled = false;
-                localStorage.setItem('kringleProductViewed', 'true');
-
-                // Remove the 'disabled' class
-                document.getElementById('kringleLink').classList.remove('disabled');
+                // All the code for video ending
+                kringleLink.classList.remove('disabled');
             });
         });
-
-        // If the 'kringleProductViewed' flag is not set in localStorage, disable the link
-        if (!localStorage.getItem('kringleProductViewed')) {
-            document.getElementById('kringleLink').onclick = function(event) {
-                event.preventDefault();
-                this.classList.add('disabled');
-            }
-        }
     }
 
     if (dpteButton && dpteVideo) {
         dpteButton.addEventListener('click', function() {
-            document.getElementById('DPtEImage').style.display = 'none';
-            dpteVideo.style.display = 'block';
-            dpteVideo.play();
-            this.style.display = 'none';
+            // All the code for video playing
 
             dpteVideo.addEventListener('ended', function() {
-                document.getElementById('DPtEImage').src = 'assets/EarlyEggcessC.gif';
-                document.getElementById('DPtEImage').style.display = 'block';
-                dpteVideo.style.display = 'none';
-                document.getElementById('nextButton').disabled = false;
-                localStorage.setItem('DPtEProductViewed', 'true');
-
-                // Remove the 'disabled' class
-                document.getElementById('DPtELink').classList.remove('disabled');
+                // All the code for video ending
+                dpteLink.classList.remove('disabled');
             });
         });
-
-        // If the 'DPtEProductViewed' flag is not set in localStorage, disable the link
-        if (!localStorage.getItem('DPtEProductViewed')) {
-            document.getElementById('DPtELink').onclick = function(event) {
-                event.preventDefault();
-                this.classList.add('disabled');
-            }
-        }
     }
 };

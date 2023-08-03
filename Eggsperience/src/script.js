@@ -8,7 +8,7 @@ import { FilmPass } from '../static/utils/FilmPass.js';
 import { EffectComposer } from '../three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from '../three/examples/jsm/postprocessing/RenderPass.js';
 import { GlitchPass } from '../static/utils/GlitchPass';
-import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+import { UnrealBloomPass } from 'https://path.to/UnrealBloomPass.js';
 import { RGBELoader } from '../three/examples/jsm/loaders/RGBELoader.js';
 import { ShaderPass } from '../three/examples/jsm/postprocessing/ShaderPass'
 

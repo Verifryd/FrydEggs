@@ -1,16 +1,16 @@
 import './style.css'
 import * as THREE from 'https://threejs.org/build/three.module.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { OrbitControls } from '../three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'lil-gui'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { GLTFLoader } from '../three/examples/jsm/loaders/GLTFLoader.js'
 import gsap from "gsap";
 import { FilmPass } from '../static/utils/FilmPass.js';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
+import { RenderPass } from '../three/examples/jsm/postprocessing/RenderPass.js';
 import { GlitchPass } from '../static/utils/GlitchPass';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
-import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
-import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass'
+import { RGBELoader } from '../three/examples/jsm/loaders/RGBELoader.js';
+import { ShaderPass } from '../three/examples/jsm/postprocessing/ShaderPass'
 
 import Stats from 'stats.js'
 

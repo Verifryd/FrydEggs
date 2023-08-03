@@ -1,3 +1,4 @@
+window.onload = function() {
 // Variables for Fabergé Egg
 var fabergeButton = document.getElementById('purchaseButton');
 var fabergeVideo = document.getElementById('productVideo');
@@ -61,7 +62,6 @@ if (dpteButton && dpteVideo) {
     });
 }
 
-window.onload = function() {
     // If the 'kringleProductViewed' flag is not set in localStorage, disable the link
     if (!localStorage.getItem('kringleProductViewed')) {
         document.getElementById('kringleLink').onclick = function(event) {

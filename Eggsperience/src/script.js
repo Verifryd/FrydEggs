@@ -11,8 +11,7 @@ import { GlitchPass } from '../static/utils/GlitchPass';
 import { UnrealBloomPass } from 'https://path.to/UnrealBloomPass.js';
 import { RGBELoader } from '../three/examples/jsm/loaders/RGBELoader.js';
 import { ShaderPass } from '../three/examples/jsm/postprocessing/ShaderPass'
-
-import Stats from 'stats.js'
+import * as Stats from 'https://your.cdn.com/path/to/stats.js';
 
 
 const darkMaterial = new THREE.MeshBasicMaterial( { color: 'black' } );

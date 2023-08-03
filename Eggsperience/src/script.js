@@ -3,7 +3,7 @@ import * as THREE from 'https://threejs.org/build/three.module.js';
 import { OrbitControls } from '../three/examples/jsm/controls/OrbitControls.js'
 import * as GUI from 'https://path.to/lil-gui.js';
 import { GLTFLoader } from '../three/examples/jsm/loaders/GLTFLoader.js'
-import gsap from "gsap";
+import { gsap } from 'https://path.to/gsap.js';
 import { FilmPass } from '../static/utils/FilmPass.js';
 import { EffectComposer } from '../three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from '../three/examples/jsm/postprocessing/RenderPass.js';

@@ -1,16 +1,16 @@
 import './style.css'
 import * as THREE from 'https://threejs.org/build/three.module.js';
-import { OrbitControls } from 'Eggsperience/node_modules/three/examples/jsm/controls/OrbitControls.js'
+import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js'
 import * as GUI from 'https://path.to/lil-gui.js';
-import { GLTFLoader } from 'Eggsperience/node_modules/three/examples/jsm/loaders/GLTFLoader.js'
+import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js'
 import { gsap } from 'https://path.to/gsap.js';
 import { FilmPass } from '../static/utils/FilmPass.js';
-import { EffectComposer } from 'Eggsperience/node_modules/three/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'Eggsperience/node_modules/three/examples/jsm/postprocessing/RenderPass.js';
-import { GlitchPass } from 'Eggsperience/static/utils/GlitchPass';
+import { EffectComposer } from '../node_modules/three/examples/jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from '../node_modules/three/examples/jsm/postprocessing/RenderPass.js';
+import { GlitchPass } from '../static/utils/GlitchPass';
 import { UnrealBloomPass } from 'https://path.to/UnrealBloomPass.js';
-import { RGBELoader } from 'Eggsperience/node_modules/three/examples/jsm/loaders/RGBELoader.js';
-import { ShaderPass } from 'Eggsperience/node_modules/three/examples/jsm/postprocessing/ShaderPass'
+import { RGBELoader } from '../node_modules/three/examples/jsm/loaders/RGBELoader.js';
+import { ShaderPass } from '../node_modules/three/examples/jsm/postprocessing/ShaderPass'
 import * as Stats from 'https://your.cdn.com/path/to/stats.js';
 
 

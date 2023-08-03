@@ -1,7 +1,7 @@
 import './style.css'
 import * as THREE from 'https://threejs.org/build/three.module.js';
 import { OrbitControls } from '../three/examples/jsm/controls/OrbitControls.js'
-import * as dat from 'lil-gui'
+import * as GUI from 'https://path.to/lil-gui.js';
 import { GLTFLoader } from '../three/examples/jsm/loaders/GLTFLoader.js'
 import gsap from "gsap";
 import { FilmPass } from '../static/utils/FilmPass.js';

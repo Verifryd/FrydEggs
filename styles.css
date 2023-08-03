@@ -119,8 +119,7 @@ button:disabled {
 }
 
 .disabled {
-    opacity: 0.8;
-    filter: blur(2px);
+    filter: blur(10px);
     pointer-events: none; /* Makes the link unclickable */
 }
 

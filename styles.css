@@ -118,5 +118,12 @@ button:disabled {
     color: #888888; /* darker grey text */
 }
 
+.disabled {
+    opacity: 0.8;
+    filter: blur(2px);
+    pointer-events: none; /* Makes the link unclickable */
+}
+
+
 
 

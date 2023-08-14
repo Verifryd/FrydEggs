@@ -110,7 +110,7 @@ body.index {
 
 #productVideo, #kringleproductVideo, #dpteproductVideo {
     width: 400px;
-    height: auto;
+    height: 400px;
 }
 
 button:disabled {
